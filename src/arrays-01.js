@@ -25,7 +25,7 @@
  * ? https://bit.ly/3EUI0j9 - Reading and Writing Array Elements
  */
 function getFirstValue(arr) {
-  // write your code here & return value
+  // write your    code here & return value
 }
 
 /**
