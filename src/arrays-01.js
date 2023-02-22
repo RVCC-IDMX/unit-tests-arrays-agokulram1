@@ -37,7 +37,7 @@ function getFirstValue(arr) {
  * @returns {array} - array of the 4 elements
  */
 function makeArray(a, b, c, d) {
-  const arr = new Array();
+  const arr = [];
   arr[0] = a;
   arr[1] = b;
   arr[2] = c;
@@ -66,7 +66,7 @@ function createFirstFivePrimes() {
  */
 function createSizedArray(size) {
   const arr = new Array(size);
-  for (let i = 0; i < size; i++) {
+  for (let i = 0; i < size; i += 1) {
     arr[i] = i;
   }
   return arr;
@@ -118,6 +118,7 @@ function findElementAtIndex(arr, index) {
  */
 function findElementByValue(arr, value) {
   const x = arr.indexOf(value);
+  return x;
 }
 
 /**
@@ -129,7 +130,8 @@ function findElementByValue(arr, value) {
  * ? example: [1, 2, 3, 4, 5], index = 2, value = 0 => [1, 2, 0, 4, 5]
  */
 function changeElementAtIndex(arr, index, value) {
-
+  arr[index] = value;
+  return arr;
 }
 
 /**
@@ -140,7 +142,7 @@ function changeElementAtIndex(arr, index, value) {
  * ? https://mzl.la/3ib7Dm3
  */
 function makeStringFromArray(arr) {
-  // write your code here & return value
+  return arr.join('');
 }
 
 /**
@@ -151,7 +153,7 @@ function makeStringFromArray(arr) {
  * ? https://bit.ly/39ASLc0 - The spread operator
  */
 function createShallowCopy(arr) {
-  // write your code here & return value
+  return [...arr];
 }
 
 module.exports = {
